@@ -13,3 +13,9 @@
 ` dotnet add src\EFExample package Microsoft.EntityFrameworkCore.Sqlite `
 
 ` dotnet run --project src\EFExample `
+
+# Container
+
+` podman build --tag efexample -f Containerfile . `
+
+` podman run --interactive --rm --name efexample efexample `
